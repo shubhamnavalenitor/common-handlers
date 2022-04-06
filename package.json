@@ -1,0 +1,26 @@
+{
+  "name": "common-helpers",
+  "version": "1.0.0",
+  "description": "A helper library",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubhamnavalenitor/common-helpers.git"
+  },
+  "author": "Shubham Navale",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubhamnavalenitor/common-helpers/issues"
+  },
+  "homepage": "https://github.com/shubhamnavalenitor/common-helpers#readme",
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "jest-cli": "^27.5.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.0"
+  }
+}
