@@ -1,4 +1,4 @@
-const formatAmountWithLabel = require('./formatAmountWithLabel.js')
+const formatAmountWithLabel = require('./formatAmountWithLabel.js');
 test('Formats the amount 100', () => {
   expect(formatAmountWithLabel(1000, 'k')).toEqual({
     formattedAmmount: 1,
@@ -7,5 +7,5 @@ test('Formats the amount 100', () => {
       key: 'thousand',
       text: 'Thousand'
     }
-  })
-})
+  });
+});

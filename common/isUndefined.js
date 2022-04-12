@@ -1,15 +1,15 @@
-function isUndefined (value) {
+function isUndefined(value) {
   // Check for undefined value
   if (value === undefined) {
-    return true
+    return true;
   }
 
   // Check for null value
   if (value === null) {
-    return true
+    return true;
   }
 
-  return false
+  return false;
 }
 
-module.exports = isUndefined
+module.exports = isUndefined;
