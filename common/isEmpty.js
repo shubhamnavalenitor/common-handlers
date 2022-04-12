@@ -1,22 +1,22 @@
-const isUndefined = require('./isUndefined')
+const isUndefined = require('./isUndefined');
 
-function isEmpty (value) {
+function isEmpty(value) {
   // Check for undefined values
   if (isUndefined(value)) {
-    return true
+    return true;
   }
 
   // Check for empty array values
   if (value.length === 0) {
-    return true
+    return true;
   }
 
   // Check for undefined objects
   if (Object.keys(value).length === 0) {
-    return true
+    return true;
   }
 
-  return false
+  return false;
 }
 
-module.exports = isEmpty
+module.exports = isEmpty;

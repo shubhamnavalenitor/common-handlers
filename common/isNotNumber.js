@@ -1,17 +1,17 @@
-const isUndefined = require('./isUndefined')
+const isUndefined = require('./isUndefined');
 
-function isNotNumber (value) {
+function isNotNumber(value) {
   // Check for undefined values
   if (isUndefined(value)) {
-    return true
+    return true;
   }
 
   // Check for non integers
   if (isNaN(value)) {
-    return true
+    return true;
   }
 
-  return false
+  return false;
 }
 
-module.exports = isNotNumber
+module.exports = isNotNumber;
