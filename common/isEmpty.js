@@ -13,7 +13,7 @@ function isEmpty(value) {
 
   // Check for undefined objects
   if (Object.keys(value).length === 0) {
-    return true
+    return true;
   }
 
   return false;
