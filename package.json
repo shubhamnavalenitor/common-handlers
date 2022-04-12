@@ -1,5 +1,5 @@
 {
-  "name": "common-helpers",
+  "name": "common-handlers",
   "version": "1.0.0",
   "description": "A helper library",
   "main": "index.js",
@@ -8,14 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/shubhamnavalenitor/common-helpers.git"
+    "url": "git+https://github.com/shubhamnavalenitor/common-handlers.git"
   },
   "author": "Shubham Navale",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/shubhamnavalenitor/common-helpers/issues"
+    "url": "https://github.com/shubhamnavalenitor/common-handlers/issues"
   },
-  "homepage": "https://github.com/shubhamnavalenitor/common-helpers#readme",
+  "homepage": "https://github.com/shubhamnavalenitor/common-handlers#readme",
   "devDependencies": {
     "jest": "^27.5.1",
     "jest-cli": "^27.5.1"
