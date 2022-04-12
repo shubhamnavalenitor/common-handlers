@@ -2,7 +2,7 @@ const dayjs = require('dayjs');
 
 function timeRange(type) {
   const dayJs = dayjs();
-  if (type === 'today') {
+  if (type === 'day') {
     return [
       dayJs,
       dayJs.add(1, 'd').subtract(1, 's')
