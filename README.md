@@ -64,6 +64,25 @@ OUTPUT:
 ]
 ```
 
+### Time Display
+> Coverts the seconds into human readable format (dd hh mm ss). If passed a type as "raw", then raw values are returned
+```console
+timeDisplayConverter(94452)
+
+OUTPUT: 
+1d 2h 14m 12s
+
+timeRange(94452, 'raw')
+
+OUTPUT: 
+{
+  days: 1,
+  hours: 2,
+  minutes: 14,
+  seconds: 12
+}
+```
+
 ## Common
 ### Is Empty
 > Checks for empty variable, object or an array
