@@ -13,12 +13,37 @@ function timeDisplayConverter(value, type) {
     };
   }
 
-  const daysDisplay = days > 0 ? `${days}d ` : '';
-  const hoursDisplay = hours > 0 ? `${hours}h ` : '';
-  const minutesDisplay = minutes > 0 ? `${minutes}m ` : '';
-  const secondsDisplay = seconds > 0 ? `${seconds}s` : '';
+  let shortDisplay = '';
+  let longDisplay = '';
 
-  return daysDisplay + hoursDisplay + minutesDisplay + secondsDisplay;
+  // days
+  if (days > 0) {
+    shortDisplay += `${days}d `;
+    longDisplay += (days === 1) ? `${days} Day ` : `${days} Days `;
+  }
+
+  // hours
+  if (hours > 0) {
+    shortDisplay += `${hours}h `;
+    longDisplay += (hours === 1) ? `${hours} Hour ` : `${hours} Hours `;
+  }
+
+  // minutes
+  if (minutes > 0) {
+    shortDisplay += `${minutes}m `;
+    longDisplay += (minutes === 1) ? `${minutes} Minute ` : `${minutes} Minutes `;
+  }
+
+  // seconds
+  if (seconds > 0) {
+    shortDisplay += `${seconds}s`;
+    longDisplay += (seconds === 1) ? `${seconds} Second` : `${seconds} Seconds`;
+  }
+
+  return {
+    shortDisplay: shortDisplay.trim(),
+    longDisplay: longDisplay.trim()
+  };
 }
 
 module.exports = timeDisplayConverter;

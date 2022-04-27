@@ -1,22 +1,37 @@
 const timeDisplayConverter = require('./timeDisplayConverter');
 test('Convert to day', () => {
-  expect(timeDisplayConverter(86400)).toBe('1d ');
+  expect(timeDisplayConverter(86400)).toEqual({
+    shortDisplay: '1d',
+    longDisplay: '1 Day'
+  });
 });
 
 test('Convert to hour', () => {
-  expect(timeDisplayConverter(3600)).toBe('1h ');
+  expect(timeDisplayConverter(3600)).toEqual({
+    shortDisplay: '1h',
+    longDisplay: '1 Hour'
+  });
 });
 
 test('Convert to minute', () => {
-  expect(timeDisplayConverter(60)).toBe('1m ');
+  expect(timeDisplayConverter(60)).toEqual({
+    shortDisplay: '1m',
+    longDisplay: '1 Minute'
+  });
 });
 
 test('Convert to seconds', () => {
-  expect(timeDisplayConverter(10)).toBe('10s');
+  expect(timeDisplayConverter(10)).toEqual({
+    shortDisplay: '10s',
+    longDisplay: '10 Seconds'
+  });
 });
 
 test('Convert to mixed data', () => {
-  expect(timeDisplayConverter(94452)).toBe('1d 2h 14m 12s');
+  expect(timeDisplayConverter(94452)).toEqual({
+    shortDisplay: '1d 2h 14m 12s',
+    longDisplay: '1 Day 2 Hours 14 Minutes 12 Seconds'
+  });
 });
 
 test('Convert to day with type raw', () => {
