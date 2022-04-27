@@ -53,9 +53,14 @@ OUTPUT: '10,00,000'
 
 ## Time
 ### Time Range
-> Calulates the time range and returns the current and calculated time
+> Calculates the date and time starting from current date and time using the input parameters
+> Input paramerters can be:
+> 1. day: calculates current + n days and returns the date
+> 2. week: calculates current + n week and returns the date
+> 3. month: calculates current + n months and returns the date
+> 4. year: calculates current + n years and returns the date
 ```console
-timeRange('week')
+timeRange('week', 1)  // 1 = number of weeks
 
 OUTPUT: 
 [
