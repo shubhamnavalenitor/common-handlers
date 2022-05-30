@@ -14,3 +14,6 @@ test('Formats the amount 100000', () => {
 test('Formats the amount 1000000', () => {
   expect(rupeeFormatter(1000000)).toBe('10,00,000');
 });
+test('Formats the amount 1000000', () => {
+  expect(rupeeFormatter(1000000, 'USD')).toBe('1,000,000');
+});
