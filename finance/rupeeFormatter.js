@@ -13,7 +13,8 @@ function rupeeFormatter(amount, currency = 'INR') {
   // Eg 19989899    899 = hundreds
   amount = amount.toString();
   if (currency === 'USD') {
-    return amount.replace(/(?<=[0-9])(?=(?:[0-9]{3})+(?![0-9]))/g, ',');
+    const convertedAmt = amount.replace(/(?=[0-9])(?=(?:[0-9]{3})+(?![0-9]))/g, ',');
+    return convertedAmt.startsWith(',') ? convertedAmt.substring(1) : convertedAmt;
   }
   let hundreds = amount.substring(amount.length - 3);
   const remaining = amount.substring(0, amount.length - 3);
