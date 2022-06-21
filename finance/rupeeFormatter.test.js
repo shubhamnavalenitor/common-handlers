@@ -15,5 +15,14 @@ test('Formats the amount 1000000', () => {
   expect(rupeeFormatter(1000000)).toBe('10,00,000');
 });
 test('Formats the amount 1000000', () => {
+  expect(rupeeFormatter(1000000)).toBe('10,00,000');
+});
+test('Formats the amount 100000', () => {
+  expect(rupeeFormatter(100000, 'USD')).toBe('100,000');
+});
+test('Formats the amount 1000000', () => {
   expect(rupeeFormatter(1000000, 'USD')).toBe('1,000,000');
+});
+test('Formats the amount 100', () => {
+  expect(rupeeFormatter(100, 'USD')).toBe('100');
 });
