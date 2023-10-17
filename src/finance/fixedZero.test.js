@@ -1,4 +1,4 @@
-const fixedZero = require('./fixedZero');
+import fixedZero from './fixedZero';
 test('Add zero to 8', () => {
   expect(fixedZero(8)).toBe('08');
 });

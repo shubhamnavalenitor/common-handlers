@@ -1,5 +1,5 @@
 /* eslint-disable no-console */
-const timeRange = require('./timeRange');
+import timeRange from './timeRange';
 test('Get next day', () => {
   const [res1, res2] = timeRange('day');
   console.log('day1: ', res1.format('DD/MM/YYYY HH:mm:ss'));

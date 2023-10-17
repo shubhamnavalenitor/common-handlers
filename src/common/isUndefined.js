@@ -1,4 +1,4 @@
-function isUndefined(value) {
+const isUndefined = (value) => {
   // Check for undefined value
   if (value === undefined) {
     return true;
@@ -10,6 +10,6 @@ function isUndefined(value) {
   }
 
   return false;
-}
+};
 
-module.exports = isUndefined;
+export default isUndefined;

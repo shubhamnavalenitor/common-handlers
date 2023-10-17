@@ -1,6 +1,6 @@
-const isUndefined = require('./isUndefined');
+import isUndefined from './isUndefined';
 
-function isEmpty(value) {
+const isEmpty = (value) => {
   // Check for undefined values
   if (isUndefined(value)) {
     return true;
@@ -17,6 +17,6 @@ function isEmpty(value) {
   }
 
   return false;
-}
+};
 
-module.exports = isEmpty;
+export default isEmpty;

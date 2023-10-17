@@ -1,4 +1,4 @@
-function timeDisplayConverter(value, type) {
+const timeDisplayConverter = (value, type) => {
   const days = Math.floor(value / 86400);
   const hours = Math.floor(value % 86400 / 3600);
   const minutes = Math.floor(value % 3600 / 60);
@@ -44,6 +44,6 @@ function timeDisplayConverter(value, type) {
     shortDisplay: shortDisplay.trim(),
     longDisplay: longDisplay.trim()
   };
-}
+};
 
-module.exports = timeDisplayConverter;
+export default timeDisplayConverter;

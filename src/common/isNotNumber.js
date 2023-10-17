@@ -1,6 +1,6 @@
-const isUndefined = require('./isUndefined');
+import isUndefined from './isUndefined';
 
-function isNotNumber(value) {
+const isNotNumber = (value) => {
   // Check for undefined values
   if (isUndefined(value)) {
     return true;
@@ -12,6 +12,6 @@ function isNotNumber(value) {
   }
 
   return false;
-}
+};
 
-module.exports = isNotNumber;
+export default isNotNumber;
