@@ -1,4 +1,4 @@
-const isNotNumber = require('./isNotNumber');
+import isNotNumber from './isNotNumber';
 test('Pass string', () => {
   expect(isNotNumber('a')).toBe(true);
 });

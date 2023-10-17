@@ -6,7 +6,7 @@
 // YEN
 // AUS
 // CANDIAN Dollars
-function rupeeFormatter(amount, currency = 'INR') {
+const rupeeFormatter = (amount, currency = 'INR') => {
   // Error handling
   if (amount === undefined || amount === null) return amount;
 
@@ -20,6 +20,6 @@ function rupeeFormatter(amount, currency = 'INR') {
   const remaining = amount.substring(0, amount.length - 3);
   if (remaining !== '') hundreds = ',' + hundreds;
   return remaining.replace(/\B(?=(\d{2})+(?!\d))/g, ',') + hundreds;
-}
+};
 
-module.exports = rupeeFormatter;
+export default rupeeFormatter;

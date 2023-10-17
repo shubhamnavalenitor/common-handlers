@@ -1,4 +1,4 @@
-const timeDisplayConverter = require('./timeDisplayConverter');
+import timeDisplayConverter from './timeDisplayConverter';
 test('Convert to day', () => {
   expect(timeDisplayConverter(86400)).toEqual({
     shortDisplay: '1d',

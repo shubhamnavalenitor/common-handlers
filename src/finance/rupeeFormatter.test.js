@@ -1,4 +1,4 @@
-const rupeeFormatter = require('./rupeeFormatter.js');
+import rupeeFormatter from './rupeeFormatter.js';
 test('Formats the amount 100', () => {
   expect(rupeeFormatter(100)).toBe('100');
 });

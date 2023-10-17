@@ -1,4 +1,4 @@
-function formatAmount(value) {
+const formatAmount = (value) => {
   const thousand = 1000;
   const lakh = 100000;
   const crore = 10000000;
@@ -20,6 +20,6 @@ function formatAmount(value) {
     valueDisplay,
     valueLabel
   };
-}
+};
 
-module.exports = formatAmount;
+export default formatAmount;

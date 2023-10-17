@@ -97,3 +97,17 @@ OUTPUT:
 
 ### Is Undefined
 > Checks for undefined variables
+
+
+# Changelogs
+
+## 1.1.2
+1. Converted module from commonJS to ECMAScript
+2. Replace imports with following format
+```JS
+Old Way:
+import timeDisplayConverter from 'common-handlers/time/timeDisplayConverter';
+
+New Way:
+import { timeDisplayConverter } from 'common-handlers';
+```

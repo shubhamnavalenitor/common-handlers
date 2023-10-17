@@ -1,4 +1,4 @@
-const isEmpty = require('./isEmpty');
+import isEmpty from './isEmpty';
 test('Pass undefined value', () => {
   expect(isEmpty()).toBe(true);
 });

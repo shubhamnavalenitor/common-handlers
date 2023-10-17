@@ -1,4 +1,4 @@
-const formatAmount = require('./formatAmount');
+import formatAmount from './formatAmount';
 test('Formats the amount 1000', () => {
   expect(formatAmount(1000)).toEqual({
     valueDisplay: 1,

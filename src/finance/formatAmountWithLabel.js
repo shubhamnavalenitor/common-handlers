@@ -1,4 +1,4 @@
-function formatAmountWithLabel(amount, label) {
+const formatAmountWithLabel = (amount, label) => {
   const thousand = 1000;
   const lakh = 100000;
   const crore = 10000000;
@@ -47,6 +47,6 @@ function formatAmountWithLabel(amount, label) {
 
   return transformedData;
     
-}
+};
 
-module.exports = formatAmountWithLabel;
+export default formatAmountWithLabel;

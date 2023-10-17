@@ -1,6 +1,6 @@
-const dayjs = require('dayjs');
+import dayjs from 'dayjs';
 
-function timeRange(type, range = 1) {
+const timeRange = (type, range = 1) => {
   const dayJs = dayjs();
   if (type === 'day') {
     return [
@@ -30,6 +30,6 @@ function timeRange(type, range = 1) {
     ];
   }
 
-}
+};
 
-module.exports = timeRange;
+export default timeRange;
